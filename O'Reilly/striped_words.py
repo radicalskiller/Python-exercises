@@ -3,7 +3,7 @@
 Input: A text as a string (unicode)
 Output: A quantity of striped words as an integer.
 Precondition:The text contains only ASCII symbols.
-0 < len(text) < 105"""
+0 < len(text) < 10^5"""
 
 import re
 
