@@ -14,15 +14,7 @@ def checkio(array):
     """
         sums even-indexes elements and multiply at the last
     """
-    if len(array) == 0:
-        return 0
-
-    res=0
-    for i in range(len(array)):
-        if i%2 == 0:
-            res += array[i]
-    res *= array[len(array)-1]
-    return res
+    return sum(array[0::2])*array[-1] if 0 < len(array) else 0
 
 
 if __name__ == '__main__':
