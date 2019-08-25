@@ -7,8 +7,6 @@ Output: A tuple."""
 from operator import itemgetter
 
 
-"""def easy_unpack(elements: tuple) -> tuple:
-    return (*[elements[0], elements[2], elements[len(elements)-2]], )"""
 easy_unpack = itemgetter(0, 2, ~1)
 
 
