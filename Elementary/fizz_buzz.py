@@ -18,14 +18,15 @@ def check_5(number: int) -> bool:
 
 
 def checkio(number: int) -> str:
-    if check_3(number) and check_5(number):
-        return 'Fizz Buzz'
-    elif check_3(number):
-        return 'Fizz'
+    if check_3(number):
+        result = 'Fizz'
+        if check_5(number):
+            result += ' Buzz'
     elif check_5(number):
-        return 'Buzz'
+        result = 'Buzz'
     else:
-        return str(number)
+        result = str(number)
+    return result
 
 
 if __name__ == '__main__':
