@@ -8,12 +8,10 @@ Precondition: 0 < number < 10^6"""
 
 
 def checkio(number: int) -> int:
-    mult = 1
-    number = str(number)
-    for i in number:
-        if int(i) != 0:
-            mult *= int(i)
-    return mult
+    res = 1
+    for d in str(number):
+        res *= int(d) if int(d) else 1
+    return res
 
 
 if __name__ == '__main__':
