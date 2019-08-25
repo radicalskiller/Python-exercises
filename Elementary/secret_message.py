@@ -11,11 +11,8 @@ all(ch in string.printable for ch in text)"""
 
 def find_message(text: str) -> str:
     """Find a secret message"""
-    res = ''
-    for c in text:
-        if c.isupper():
-            res += c
-    return res
+    message = [x for x in text if x.isupper()]
+    return message
 
 
 if __name__ == '__main__':
