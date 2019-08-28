@@ -10,8 +10,7 @@ def left_join(phrases):
     """
         Join strings and replace "right" to "left"
     """
-    phrases = ','.join(phrases)
-    return phrases.replace('right', 'left')
+    return ",".join(phrases).replace("right", "left")
 
 
 if __name__ == '__main__':
