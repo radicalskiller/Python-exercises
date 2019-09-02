@@ -18,16 +18,7 @@ The input text will consists of English letters in uppercase and lowercase and w
 
 def popular_words(text: str, words: list) -> dict:
     text = text.lower().split()
-    res = {}
-
-    for word in words:
-        res[word] = 0
-
-    for word in text:
-        if word in words:
-            res[word] += 1
-    print(res)
-    return res
+    return {i: text.count(i) for i in words}
 
 
 if __name__ == '__main__':
